@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/portfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>    
+    <title>Toni Basai</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav-item">
+                <li class="header__nav-item-name">
+                    <a href="">Tony Basai</a>
+                </li>
+            </ul>
+            <div class="header__nav-menu">
+                <ul class="header__nav-item">
+                    <li class="header__nav-text">
+                        <a href="#Home">Home</a>
+                    </li>
+                    <li class="header__nav-text">
+                        <a href="#About">About</a>
+                    </li>
+                    <li class="header__nav-text">
+                        <a href="#Work">Work</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="Home" class="section">
+        <div class="container__home">
+            <div class="about-me__item">
+                <h3 class="about-me__item-info">
+                    Hello, I`m Tony, <span class="abaut-me__info-span">frontend developer</span> based in Belarus.
+                </h3>
+                <button class="about-me__button">
+                    Resume
+                </button>
+            </div>
+            <div class="abaut-me__img">
+                <img class="abaut-me__img-border" src="./img-portfolio/Vector.svg" alt="">
+                <img class="abaut-me__img-foto" src="./img-portfolio/toha2023-03-19_18-51-25.jpg" alt="">
+                <div class="abaut-me__img-symbols">
+                    <img class="plus" src="./img-portfolio/Group 10.svg" alt="">
+                    <img src="./img-portfolio/Group 6.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal modal--hidden">
+        <form class="modal__content">
+            <button class="modal__buttom-close"></button>
+            <h4 class="modal-area__title">
+                Для скачивания портфолио нажмите кнопку "Download".
+            </h4>
+            <button class="modal__buttom-download">Download</button>
+        </form>
+    </div>
+    <section id="About" class="section">
+        <div class="container">
+            <div class="about-me__info-work">
+                <h3 class="info__item-title section-title">
+                    about.
+                </h3>
+                <p class="info__item-paragraph section-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+                </p>
+            </div>
+            <div class="info__item-accordion">
+                <div class="item-accordion__items">
+                    <ul class="accordion-items__mark">
+                        <li class="item-mark__date">
+                            2014-2018
+                        </li>                        
+                    </ul>
+                    <div class="item__accordion">
+                        <p class="item-accordion__paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+                        </p>
+                    </div>
+                </div>
+                <div class="item-accordion__items">
+                    <ul class="accordion-items__mark">
+                        <li class="item-mark__date">
+                            2014-2018
+                        </li>                        
+                    </ul>
+                    <div class="item__accordion">
+                        <p class="item-accordion__paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+                        </p>
+                    </div>
+                </div>
+                <div class="item-accordion__items">
+                    <ul class="accordion-items__mark">
+                        <li class="item-mark__date">
+                            2014-2018
+                        </li>                        
+                    </ul>
+                    <div class="item__accordion">
+                        <p class="item-accordion__paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+                        </p>
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </section>
+    <section id="Work" class="section-work">
+        <div class="section-work__container">
+            <div class="about-me__info-work">
+                <h3 class="section-title">
+                    work.
+                </h3>
+                <p class="section-paragraph">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+                </p>
+            </div>
+            <div class="work__cards">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="work-card__img" src="./img-portfolio/Rectangle 8.svg" alt="">
+                            <h6 class="work-card__date">
+                                November 24, 2019
+                            </h6>
+                            <h4 class="work-card__title">
+                                Some Case Study
+                            </h4>
+                            <p class="work-card__paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin rhoncus morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc, consequat, at.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="work-card__img" src="./img-portfolio/unsplash_ubIWo074QlU.svg" alt="">
+                            <h6 class="work-card__date">
+                                November 24, 2019
+                            </h6>
+                            <h4 class="work-card__title">
+                                Some Case Study
+                            </h4>
+                            <p class="work-card__paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin rhoncus morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc, consequat, at.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="work-card__img" src="./img-portfolio/unsplash_ubIWo074QlU.svg" alt="">
+                            <h6 class="work-card__date">
+                                November 24, 2019
+                            </h6>
+                            <h4 class="work-card__title">
+                                Some Case Study
+                            </h4>
+                            <p class="work-card__paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin rhoncus morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc, consequat, at.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="work-card__img" src="./img-portfolio/unsplash_ubIWo074QlU.svg" alt="">
+                            <h6 class="work-card__date">
+                                November 24, 2019
+                            </h6>
+                            <h4 class="work-card__title">
+                                Some Case Study
+                            </h4>
+                            <p class="work-card__paragraph">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed aliquam sollicitudin rhoncus morbi. Tincidunt quam sem elit a convallis. Eget ipsum, velit vitae eu nunc, consequat, at.
+                            </p>
+                        </div>                    
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h3 class="section-title">
+                contact.
+            </h3>
+            <div class="contact__items">
+                <img class="contact__img" src="./img-portfolio/unsplash_ubIWo074QlU.svg" alt="">
+                <div class="contact__info">
+                    <p class="contact__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+                    </p>
+                    <p class="contact__paragraph-cont">
+                        tonybasai29@mail.com
+                    </p>
+                    <p class="contact__paragraph-cont">
+                        twitter.com/tony_iasab
+                    </p>
+                    <p class="contact__paragraph-cont">
+                        @tony_iasab
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./portfolio.js"></script> 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
+</body>
+</html>
