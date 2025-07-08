@@ -297,6 +297,7 @@ body {
 .swiper-slide {
     width: auto;
     color: var(--maroon);
+    padding:0rem 2.5rem 1rem;
 }
 
 .work-card__img {
