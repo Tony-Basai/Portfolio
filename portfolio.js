@@ -79,4 +79,20 @@ window.addEventListener('DOMContentLoaded', () => {
       dynamicBullets: true,
     },
   });
+
+
+  const elements = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {            if (entry.isIntersecting) {
+              entry.target.classList.add('fade-in--visible');
+              observer.unobserve(entry.target); // один раз
+          }
+      });
+  }, {
+      threshold: 0.2
+  });
+
+  elements.forEach(el => observer.observe(el));
+
 });
