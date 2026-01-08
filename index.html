@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>    
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__container">
+                <ul class="header__nav-item">
+                    <li class="header__nav-item-name">
+                        <a href="#home">Tony Basai</a>
+                    </li>
+                </ul>
+                <div class="header__nav-menu">
+                    <ul class="header__nav-item">
+                        <li class="header__nav-text">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="header__nav-text">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="header__nav-text">
+                            <a href="#work">Work</a>
+                        </li>
+                    </ul>
+                    <div class="header__socials">
+                        <a class="icon__link" href="mailto:tonybasai29@mail.com">
+                            <svg class="link__svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                                <path d="m21.55,8.17l-2.55-1.7v-1.46c0-.55-.45-1-1-1h-2.7l-2.75-1.83c-.34-.22-.77-.22-1.11,0l-2.75,1.83h-2.7c-.55,0-1,.45-1,1v1.46l-2.55,1.7c-.28.19-.45.5-.45.83v11c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2v-11c0-.33-.17-.65-.45-.83Zm-14.55-2.17h10v4.46l-5,3.33-5-3.33v-4.46Zm-3,14v-9.13l1.45.96,6,4c.17.11.36.17.55.17s.39-.06.55-.17l6-4,1.45-.96v9.13H4Z"></path>
+                            </svg>                                
+                        </a>
+                        <a class="icon__link" href="https://t.me/@tony_iasab" target="_blank">
+                            <svg class="link__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                                <path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+
+        <section id="home" class="main__hero section">
+            <div class="hero__container-home">
+                <div class="container-home__about-me">
+                    <h3 class="about-me__title">
+                        Hello, I`m Tony,</br> <span class="abaut-me__info__span">frontend developer</span></br> based in Belarus.
+                    </h3>
+                    <button class="about-me__button">
+                        Resume
+                    </button>
+                </div>
+                <div class="container-home__items-photo">
+                    <img class="items-photo__img-border" src="./img-portfolio/Vector.svg" alt="Border-vector">
+                    <img class="items-photo__img-photo" src="./img-portfolio/toha2023-03-19_18-51-25.jpg" alt="My photo">
+                    <div class="items-photo__img-symbols">
+                        <img class="symbols__plus" src="./img-portfolio/Group 10.svg" alt="symbols-img">
+                        <img class="symbols__slashes" src="./img-portfolio/Group 6.svg" alt="symbols-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal modal--hidden">
+            <form class="modal__content">
+                <button class="modal__buttom-close" type="button">
+                    <svg class="buttom-close__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" fill="currentColor">
+                        <path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/>
+                    </svg>
+                </button>
+                <h4 class="modal-area__title">
+                    Choose your preferred language to download the resume.
+                </h4>
+                <div class="modal__buttoms">
+                    <a class="modal__buttom-download" href="./files/Tony_Basai_Junior_Frontend_CV_EN_compressed.pdf" download>
+                        <svg class="buttom-download__svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                            <path d="m20,4h-8.59l-1.41-1.41c-.38-.38-.88-.59-1.41-.59h-4.59c-1.1,0-2,.9-2,2v14c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2V6c0-1.1-.9-2-2-2Zm0,14H4s0-12,0-12h16v12Z"></path><path d="M11 8 11 12 8 12 12 16 16 12 13 12 13 8 11 8z"></path>
+                        </svg>
+                        Resume EN
+                    </a>
+                    <a class="modal__buttom-download" href="./files/Tony_Basai_Junior_Frontend_CV_RU_compressed.pdf" download>
+                        <svg class="buttom-download__svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                            <path d="m20,4h-8.59l-1.41-1.41c-.38-.38-.88-.59-1.41-.59h-4.59c-1.1,0-2,.9-2,2v14c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2V6c0-1.1-.9-2-2-2Zm0,14H4s0-12,0-12h16v12Z"></path><path d="M11 8 11 12 8 12 12 16 16 12 13 12 13 8 11 8z"></path>
+                        </svg>                    
+                        Resume RU
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <section id="about" class="main__about section">
+            <div class="container">
+                <div class="about-me__info-work">
+                    <h3 class="info__item-title section-title">
+                        about.
+                    </h3>
+                    <p class="info__item-paragraph section-paragraph">
+                        I am a Junior Frontend Developer focused on building responsive and user-friendly web interfaces.
+                        I work with HTML, CSS, JavaScript, and modern tools to create clean and accessible UI.
+                        I am eager to grow professionally and contribute to real-world projects.
+                    </p>
+                </div>
+                <div class="info__item-accordion">
+                    <div class="item-accordion__items">
+                        <button class="accordion-items__button">
+                            <span class="button__skills">
+                                Frontend Skills
+                            </span>     
+                            <span class="button__plus">+</span>                   
+                        </button>
+                        <div class="item__accordion">
+                            <p class="item-accordion__paragraph">
+                                HTML5, semantic markup, accessibility basics (ARIA).</br>
+                                CSS3, Flexbox, Grid, responsive layouts, animations.</br>
+                                JavaScript (ES6+): DOM manipulation, events, basic async logic.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-accordion__items">
+                        <button class="accordion-items__button">
+                            <span class="button__skills">
+                                Tools & Workflow
+                            </span>
+                            <span class="button__plus">+</span>                        
+                        </button>
+                        <div class="item__accordion">
+                            <p class="item-accordion__paragraph">
+                                Git & GitHub for version control.</br>
+                                Basic experience with npm and bundlers.</br>
+                                Working with Figma designs and following UI guidelines.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item-accordion__items">
+                        <button class="accordion-items__button">
+                            <span class="button__skills">
+                                Experience & Learning
+                            </span>
+                            <span class="button__plus">+</span>
+                        </button>
+                        <div class="item__accordion">
+                            <p class="item-accordion__paragraph">
+                                Building personal and training projects.</br>
+                                Writing clean and maintainable code.</br>
+                                Constantly learning modern frontend technologies and best practices.
+                            </p>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="section-work section">
+            <div class="section-work__container container">
+                <div class="about-me__info-work">
+                    <h3 class="section-title">
+                        work.
+                    </h3>
+                    <p class="section-paragraph">
+                        A selection of my frontend projects, including real client work and personal applications.
+                        Each project demonstrates my skills in layout, interactivity, and modern frontend development.
+                    </p>
+                </div>
+                <div class="work__cards">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="https://project-forged-wgrh.vercel.app/" target="_blank" class="work-card__link">
+                                    <img
+                                        src="https://image.thum.io/get/width/800/https://project-forged-wgrh.vercel.app/"
+                                        alt="Preview site"
+                                        class="work-card__img">
+                                </a>
+                                <h6 class="work-card__date">
+                                    November 2025
+                                    <span class="work-card__stack">
+                                        (Vue.js · HTML · SCSS · JavaScript)
+                                    </span>    
+                                </h6>
+                                <a class="work-card__title" href="https://project-forged-wgrh.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    Forged
+                                </a>
+                                <p class="work-card__paragraph">
+                                    A commercial website developed for a real client based on business requirements.
+                                    The project includes product presentation, shopping cart functionality, and order placement.
+                                    Built with Vue.js, HTML, SCSS, and JavaScript. Fully responsive.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://house-4bvf.vercel.app/" target="_blank" class="work-card__link">
+                                    <img
+                                        src="https://image.thum.io/get/width/800/https://house-4bvf.vercel.app/"
+                                        alt="Preview site"
+                                        class="work-card__img">
+                                </a>                                
+                                <h6 class="work-card__date">
+                                    September 2025
+                                    <span class="work-card__stack">
+                                        (Vue.js · HTML · SCSS · JavaScript)
+                                    </span>
+                                </h6>
+                                <a class="work-card__title" href="https://house-4bvf.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                    House
+                                </a>
+                                <p class="work-card__paragraph">
+                                    A one-page landing page with a product catalog and filtering by author country.
+                                    Implemented interactive filtering and responsive layout.
+                                    Built with Vue.js, HTML, SCSS, and JavaScript.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://tony-basai.github.io/List-Dessert/ListDessert.html" target="_blank" class="work-card__link">
+                                    <img
+                                        src="https://image.thum.io/get/width/800/https://tony-basai.github.io/List-Dessert/ListDessert.html"
+                                        alt="Preview site"
+                                        class="work-card__img">
+                                </a>
+                                <h6 class="work-card__date">
+                                    August 2025
+                                    <span class="work-card__stack">
+                                        (HTML · CSS · JavaScript)
+                                    </span>
+                                </h6>
+                                <a class="work-card__title" href="https://tony-basai.github.io/List-Dessert/ListDessert.html" target="_blank" rel="noopener noreferrer">
+                                    List-Dessert
+                                </a>
+                                <p class="work-card__paragraph">
+                                    An interactive dessert menu with cart functionality.
+                                    Users can add and remove items, calculate total cost, and place an order.
+                                    Built using vanilla HTML, CSS, and JavaScript.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://tony-basai.github.io/Uber/Restaurant.html" target="_blank" class="work-card__link">
+                                    <img
+                                        src="https://image.thum.io/get/width/800/https://tony-basai.github.io/Uber/Restaurant.html"
+                                        alt="Preview site"
+                                        class="work-card__img">
+                                </a>                                
+                                <h6 class="work-card__date">
+                                    January 2025
+                                    <span class="work-card__stack">
+                                        (Tailwind · CSS)
+                                    </span>
+                                </h6>
+                                <a class="work-card__title" href="https://tony-basai.github.io/Uber/Restaurant.html" target="_blank" rel="noopener noreferrer">
+                                    UberRestaurant
+                                </a>
+                                <p class="work-card__paragraph">
+                                    A restaurant menu page focused on layout and visual structure.
+                                    Implemented responsive grid layout using Tailwind CSS.
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="https://tony-basai.github.io/Calculator/calculator.html" target="_blank" class="work-card__link">
+                                    <img
+                                        src="https://image.thum.io/get/width/800/https://tony-basai.github.io/Calculator/calculator.html"
+                                        alt="Preview site"
+                                        class="work-card__img">
+                                </a>                                
+                                <h6 class="work-card__date">
+                                    July 2025
+                                    <span class="work-card__stack">
+                                        (HTML · SCSS · JavaScript)
+                                    </span>
+                                </h6>
+                                <a class="work-card__title" href="https://tony-basai.github.io/Calculator/calculator.html" target="_blank" rel="noopener noreferrer">
+                                    Calculator
+                                </a>
+                                <p class="work-card__paragraph">
+                                    A simple bill calculator with tip calculation for multiple people.
+                                    Implemented core JavaScript logic and basic UI using HTML and CSS.
+                                </p>
+                            </div>                    
+                        </div>
+                        <div class="swiper-button-prev work__cards"></div>
+                        <div class="swiper-button-next work__cards"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>                
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <div class="container">
+                <h3 class="section-title">
+                    contact.
+                </h3>
+                <div class="contact__info">
+                    <p class="contact__paragraph section-paragraph">
+                        I’m open to new opportunities, freelance projects, and collaboration.
+                        Feel free to contact me using the details below.
+                    </p>
+                    <div class="contact-info__items">
+                        <a class="contact__link" 
+                            href="mailto:tonybasai29@mail.com"
+                        >
+                            <svg class="link__svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                                <path d="m21.55,8.17l-2.55-1.7v-1.46c0-.55-.45-1-1-1h-2.7l-2.75-1.83c-.34-.22-.77-.22-1.11,0l-2.75,1.83h-2.7c-.55,0-1,.45-1,1v1.46l-2.55,1.7c-.28.19-.45.5-.45.83v11c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2v-11c0-.33-.17-.65-.45-.83Zm-14.55-2.17h10v4.46l-5,3.33-5-3.33v-4.46Zm-3,14v-9.13l1.45.96,6,4c.17.11.36.17.55.17s.39-.06.55-.17l6-4,1.45-.96v9.13H4Z"></path>
+                            </svg>                             
+                            tonybasai29@mail.com
+                        </a>
+                        
+                        <a class="contact__link link__telegram" 
+                            href="https://t.me/@tony_iasab" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <svg class="link__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                                <path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434"></path>
+                            </svg>
+                            @tony_iasab
+                        </a>
+
+                        <a class="contact__link"
+                            href="https://github.com/tony-basai" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <svg class="link__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                                <path fill-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2" clip-rule="evenodd"></path>
+                            </svg>
+                            github.com/tony-basai
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="footer__container">
+            
+            <p class="footer__copy">
+                &copy; <span id="current-year"></span> Tony Basai — Frontend Developer
+            </p>
+
+            <div class="footer__items">
+
+                <nav class="footer__nav">
+                    <a class="footer__nav-link" href="#home">Home</a>
+                    <a class="footer__nav-link" href="#about">About</a>
+                    <a class="footer__nav-link" href="#work">Work</a>
+                    <a class="footer__nav-link" href="#contact">Contact</a>
+                </nav>
+    
+                <div class="footer__info">
+                    <div class="info__socials-items">
+                        <a href="mailto:tonybasai29@mail.com">
+                            <svg class="link__svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                                <path d="m21.55,8.17l-2.55-1.7v-1.46c0-.55-.45-1-1-1h-2.7l-2.75-1.83c-.34-.22-.77-.22-1.11,0l-2.75,1.83h-2.7c-.55,0-1,.45-1,1v1.46l-2.55,1.7c-.28.19-.45.5-.45.83v11c0,1.1.9,2,2,2h16c1.1,0,2-.9,2-2v-11c0-.33-.17-.65-.45-.83Zm-14.55-2.17h10v4.46l-5,3.33-5-3.33v-4.46Zm-3,14v-9.13l1.45.96,6,4c.17.11.36.17.55.17s.39-.06.55-.17l6-4,1.45-.96v9.13H4Z"></path>
+                            </svg>                             
+                        </a>
+                        <a href="https://t.me/@tony_iasab"
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <svg class="link__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                                <path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434"></path>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/tony-basai" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <svg class="link__svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                                <path fill-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.6 9.6 0 0 1 2.496-.336 9.6 9.6 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>         
+                    </div>
+                    <div class="info__made-items">
+                        <p class="made-items__text">
+                            Made with
+                        </p>
+                        <svg class="made-items__icon"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                            <path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402z"></path>
+                        </svg>
+                        <svg class="made-items__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                            <path d="M4.192 3.143h15.615l-1.42 16.034-6.404 1.812-6.369-1.813zM16.9 6.424l-9.8-.002.158 1.949 7.529.002-.189 2.02H9.66l.179 1.913h4.597l-.272 2.62-2.164.598-2.197-.603-.141-1.569h-1.94l.216 2.867L12 17.484l3.995-1.137z"></path>
+                        </svg>
+                        <svg class="made-items__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
+                            <path d="M3 3h18v18H3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('current-year').innerText = new Date().getFullYear();
+    </script>
+    <script src="./portfolio.js"></script> 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>   
+
+</body>
+</html>
